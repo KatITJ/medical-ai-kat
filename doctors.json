@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Dr. Carlos Brown",
+    "specialty": "General Medicine",
+    "mode": "Virtual"
+  },
+  {
+    "name": "Dr. Mary Smith",
+    "specialty": "Internal Medicine",
+    "mode": "In-Person"
+  },
+  {
+    "name": "Dr. William Johnson",
+    "specialty": "Infectious Diseases",
+    "mode": "Virtual"
+  }
+]
