@@ -2,16 +2,29 @@
   {
     "name": "Dr. Carlos Brown",
     "specialty": "General Medicine",
-    "mode": "Virtual"
+    "mode": "Virtual",
+    "availability": [
+      "2026-02-24 09:00",
+      "2026-02-24 11:00",
+      "2026-02-25 15:00"
+    ]
   },
   {
     "name": "Dr. Mary Smith",
     "specialty": "Internal Medicine",
-    "mode": "In-Person"
+    "mode": "In-Person",
+    "availability": [
+      "2026-02-24 10:00",
+      "2026-02-26 14:00"
+    ]
   },
   {
     "name": "Dr. William Johnson",
     "specialty": "Infectious Diseases",
-    "mode": "Virtual"
+    "mode": "Virtual",
+    "availability": [
+      "2026-02-24 13:00",
+      "2026-02-25 16:00"
+    ]
   }
 ]
