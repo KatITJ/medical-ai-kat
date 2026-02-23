@@ -1,6 +1,7 @@
 import streamlit as st
 import vertexai
 from vertexai.preview.generative_models import GenerativeModel
+from google.oauth2 import service_account
 import json
 from datetime import datetime
 
@@ -8,7 +9,17 @@ from datetime import datetime
 PROJECT_ID = "neurodocsdomain"
 LOCATION = "us-west1"
 
-vertexai.init(project=PROJECT_ID, location=LOCATION)
+# 🔐 USE SERVICE ACCOUNT FROM STREAMLIT SECRETS
+credentials = service_account.Credentials.from_service_account_info(
+    st.secrets["gcp"]
+)
+
+vertexai.init(
+    project=PROJECT_ID,
+    location=LOCATION,
+    credentials=credentials,
+)
+
 model = GenerativeModel("gemini-2.5-flash-lite")
 
 st.set_page_config(page_title="AI Medical Assistant", page_icon="🩺")
